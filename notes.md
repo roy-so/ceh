@@ -89,6 +89,8 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value that yo
 3- adb shell              (Access mobile device on parrot)
 4- pwd --> ls --> cd sdcard --> ls --> cat secret.txt (If you can't find it there then go to Downloads folder using: cd downloads)
 5- sudo adb pull <source path>
+6- ent <file>.elf	#eg. 1234 is low entropy, $73269362EUEROIH@#hUFH is high entropy, example for command output Entropy = 2.521641 bits per byte.
+7- sha384sunm <file>.elf	#generate sha 384 hash.
 ```
 # Wireshark
 ```
