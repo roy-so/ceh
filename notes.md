@@ -234,7 +234,7 @@ sqlmap -r <txt file from burpsuite> -D <database name> --tables
 
 sqlmap -r <txt file from burpsuite> -D <database name> --tables --columns
 
-sqlmap -r <txt file from burpsuite> -D <database name> --dump
+sqlmap -r <txt file from burpsuite> -D <database name> --dump / --dump-all
 
 sqlmap -r <txt file from burpsuite> -D <database name> --tables -T users
 
