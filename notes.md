@@ -121,7 +121,8 @@ Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt 
 
 ## Example of Questions: 
 
-Question-1.   There is a machine running wamp server in the subnet. Provide the IP address of the server.
+
+### Question-1.   There is a machine running wamp server in the subnet. Provide the IP address of the server.
 
 Tips:-   Scan the entire subnet with -A(aggressive scan) in nmap or use -sV(version flag). You can speed up the scan by specifying port with -p as 8080,80,443.
 
@@ -129,7 +130,7 @@ Suggested lecture: Scanning with nmap
 
 
 
-Question-2.  Find the FQDN of the domain controller in the network
+### Question-2.  Find the FQDN of the domain controller in the network
 
 Tips:-   Scan the entire subnet with -A(aggressive scan) in nmap. The  FQDN will appear for the server.
 
@@ -137,7 +138,7 @@ Suggested lecture: Scanning with nmap
 
 
 
-Question-3.  Identify the machine with smb enabled. Crack the smb credentials for the username given. Access an encrypted file and decode the encrypted file to retrieve the flag.
+### Question-3.  Identify the machine with smb enabled. Crack the smb credentials for the username given. Access an encrypted file and decode the encrypted file to retrieve the flag.
 
 Tips:-   Scan the entire subnet for open smb ports. You can use the wordlist available on the desktop on Parrot os. Use Hydra to crack it. You can also use Metasploit to crack the password. Use Msfconsole auxiliary/scanner/smb/smb_login . The password for the encoded file is the same. If the file contains a hash, try to decode it.
 
@@ -145,7 +146,7 @@ Suggested lecture: smb enumeration, FTP Exploitation.
 
 
 
-Question-4.  There is an Android device in the subnet. Identify the device. Get the files in scan folder. Provide SHA384 hash with the largest of entropy
+### Question-4.  There is an Android device in the subnet. Identify the device. Get the files in scan folder. Provide SHA384 hash with the largest of entropy
 
 Tips:-   Scan the entire subnet to identify android device. Use Phoesploit, pull required folder to download files, check the ectropy of all files (Detect it easy tool), and then calculate hash. (hashcalc)
 
@@ -153,7 +154,7 @@ Suggested lectures: Hacking Android Devices with Phonesploit over ADB, Analyze E
 
 
 
-Question-5.  Perform the vulnerability scan for the given IP address. What is the severe value of a vulnerability that indicates the end of life for a web development language platform?
+### Question-5.  Perform the vulnerability scan for the given IP address. What is the severe value of a vulnerability that indicates the end of life for a web development language platform?
 
 Tips:-   Use Nessus to scan the target. Nessus will provide all results.
 
@@ -161,7 +162,7 @@ Suggested lectures: -
 
 
 
-Question-6.  Exploit a remote login application on a Linux target in the given subnet to access a sensitive file. Enter the content of the file.
+### Question-6.  Exploit a remote login application on a Linux target in the given subnet to access a sensitive file. Enter the content of the file.
 
 Tips:-   Use Hydra to break the password Telnet, login and access the file, and enter the flag
 
@@ -169,7 +170,7 @@ Suggested lectures: FTP Exploitation. telnet exploitation
 
 
 
-Question-7.  Analyze the image file to extract the hidden message. Password is given.
+### Question-7.  Analyze the image file to extract the hidden message. Password is given.
 
 Tips:-   Use Open stego to reveal the secret
 
@@ -177,7 +178,7 @@ Suggested lectures: Image Steganography
 
 
 
-Question-8.  Exploit weak credentials of FTP. Obtain the hidden file
+### Question-8.  Exploit weak credentials of FTP. Obtain the hidden file
 
 Tips:-   Use Hydra to break the password, login and access the file, and enter the flag
 
@@ -185,7 +186,7 @@ Suggested lectures: FTP Exploitation.
 
 
 
-Question-9.  Escalate privilege on a Linux machine. User-level credentials are given.
+### Question-9.  Escalate privilege on a Linux machine. User-level credentials are given.
 
 Tips:-   Use polkit exploit to get the root access
 
@@ -193,7 +194,7 @@ Suggested lectures: Walkthrough - Escalate Privileges by Exploiting Vulnerabilit
 
 
 
-Question-10.  Find a file entry point. File is given
+### Question-10.  Find a file entry point. File is given
 
 Tips:-   Use DIE(detect it easy) or exeinfo PE tools.
 
@@ -201,7 +202,7 @@ Suggested lectures: Analyze ELF Executable File using Detect It Easy (DIE), Find
 
 
 
-Question-11.  From a pcap file, analyze a DDOS attack and provide the IP address that sent most packets.
+### Question-11.  From a pcap file, analyze a DDOS attack and provide the IP address that sent most packets.
 
 Tips:-   Use Wireshark and statistics tab
 
@@ -209,7 +210,7 @@ Suggested lectures: Detect DDOS attack with Wireshark
 
 
 
-Question-12.  You are provided a username/password for a website. Use SQL Injection attack to extract the password of another user.
+### Question-12.  You are provided a username/password for a website. Use SQL Injection attack to extract the password of another user.
 
 Tips:-   Log in with the given credential. Use cookie to extract the password of a user from the table with sqlmap.
 
@@ -225,7 +226,7 @@ Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLM
 
 
 
-Question-13.  Exploit a web application at www.xxxx.com and enter the flag value from given page.
+### Question-13.  Exploit a web application at www.xxxx.com and enter the flag value from given page.
 
 Tips:-  Find any input parameter on website and capture the request in burp and then use it to perform sql injection using sqlmap
 
@@ -241,7 +242,7 @@ Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLM
 
 
 
-Question-14.  Perform vulnerability research and exploit the target at given site.
+### Question-14.  Perform vulnerability research and exploit the target at given site.
 
 Tips:-   Scan the target with Zapp to find the vulnerability. Then exploit it. It can be file upload/ File inclusion vulnerability on DVWA.
 
@@ -249,7 +250,7 @@ Suggested lectures: - DVWA file upload, File Inclusion
 
 
 
-Question-15.  Perform SQL injection on a website and extract flag value.
+### Question-15.  Perform SQL injection on a website and extract flag value.
 
 Tips:-   Use sqlmap
 
@@ -257,7 +258,7 @@ Suggested lectures: - SQL Injection Vulnerabilities, SQL Injection Challenge (SQ
 
 
 
-Question-16.  A file is available in a directory with DVWA. Access the file and enter the contents.
+### Question-16.  A file is available in a directory with DVWA. Access the file and enter the contents.
 
 Tips:-   Use the file inclusion mechanism to access the file
 
@@ -265,7 +266,7 @@ Suggested lectures: - DVWA  File Inclusion
 
 
 
-Question-17.  Analyze IoT traffic from a pcap file. Identify the packet with the publish message and enter the length.
+### Question-17.  Analyze IoT traffic from a pcap file. Identify the packet with the publish message and enter the length.
 
 Tips:- Open IOT capture file in wireshark. Filter; MQTT and find length of the packet in the lower pane
 
@@ -273,7 +274,7 @@ Suggested lectures: - Detect IoT traffic
 
 
 
-Question-18.  Crack the weak credentials of wifi from a pcap file
+### Question-18.  Crack the weak credentials of wifi from a pcap file
 
 Tips:- Use aircrack-ng to crack the password.
 
@@ -283,7 +284,7 @@ Suggested lectures: - Walkthrough - Perform Wireless Attacks, Crack Wifi with Ai
 
 
 
-Question-19.  A RAT server is installed on a server. Connect with it and access the file.
+### Question-19.  A RAT server is installed on a server. Connect with it and access the file.
 
 Tips:- Scan all ports with nmap (-p-). Look for the unknown ports. Use theef RAT to connect to it.
 
@@ -291,7 +292,7 @@ Suggested lectures: - Create a Trojan Server using Theef RAT Trojan
 
 
 
-Question-20.  Decrypt the veracrypt volume
+### Question-20.  Decrypt the veracrypt volume
 
 Tips:- Use veracrypt to decrypt the volume.
 
