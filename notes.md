@@ -125,7 +125,7 @@ Question-1.   There is a machine running wamp server in the subnet. Provide the 
 
 Tips:-   Scan the entire subnet with -A(aggressive scan) in nmap or use -sV(version flag). You can speed up the scan by specifying port with -p as 8080,80,443.
 
->>>>>>Suggested lecture: Scanning with nmap
+Suggested lecture: Scanning with nmap
 
 
 
@@ -133,7 +133,7 @@ Question-2.  Find the FQDN of the domain controller in the network
 
 Tips:-   Scan the entire subnet with -A(aggressive scan) in nmap. The  FQDN will appear for the server.
 
->>>>>>Suggested lecture: Scanning with nmap
+Suggested lecture: Scanning with nmap
 
 
 
@@ -141,7 +141,7 @@ Question-3.  Identify the machine with smb enabled. Crack the smb credentials fo
 
 Tips:-   Scan the entire subnet for open smb ports. You can use the wordlist available on the desktop on Parrot os. Use Hydra to crack it. You can also use Metasploit to crack the password. Use Msfconsole auxiliary/scanner/smb/smb_login . The password for the encoded file is the same. If the file contains a hash, try to decode it.
 
->>>>>>Suggested lecture: smb enumeration, FTP Exploitation.
+Suggested lecture: smb enumeration, FTP Exploitation.
 
 
 
@@ -149,7 +149,7 @@ Question-4.  There is an Android device in the subnet. Identify the device. Get 
 
 Tips:-   Scan the entire subnet to identify android device. Use Phoesploit, pull required folder to download files, check the ectropy of all files (Detect it easy tool), and then calculate hash. (hashcalc)
 
->>>>>>Suggested lectures: Hacking Android Devices with Phonesploit over ADB, Analyze ELF Executable File using Detect It Easy (DIE), Calculating Hashes on Windows with different tools
+Suggested lectures: Hacking Android Devices with Phonesploit over ADB, Analyze ELF Executable File using Detect It Easy (DIE), Calculating Hashes on Windows with different tools
 
 
 
@@ -157,7 +157,7 @@ Question-5.  Perform the vulnerability scan for the given IP address. What is th
 
 Tips:-   Use Nessus to scan the target. Nessus will provide all results.
 
->>>>>>Suggested lectures: -
+Suggested lectures: -
 
 
 
@@ -165,7 +165,7 @@ Question-6.  Exploit a remote login application on a Linux target in the given s
 
 Tips:-   Use Hydra to break the password Telnet, login and access the file, and enter the flag
 
->>>>>>Suggested lectures: FTP Exploitation. telnet exploitation
+Suggested lectures: FTP Exploitation. telnet exploitation
 
 
 
@@ -173,7 +173,7 @@ Question-7.  Analyze the image file to extract the hidden message. Password is g
 
 Tips:-   Use Open stego to reveal the secret
 
->>>>>>Suggested lectures: Image Steganography
+Suggested lectures: Image Steganography
 
 
 
@@ -181,7 +181,7 @@ Question-8.  Exploit weak credentials of FTP. Obtain the hidden file
 
 Tips:-   Use Hydra to break the password, login and access the file, and enter the flag
 
->>>>>>Suggested lectures: FTP Exploitation.
+Suggested lectures: FTP Exploitation.
 
 
 
@@ -189,7 +189,7 @@ Question-9.  Escalate privilege on a Linux machine. User-level credentials are g
 
 Tips:-   Use polkit exploit to get the root access
 
->>>>>>Suggested lectures: Walkthrough - Escalate Privileges by Exploiting Vulnerability in pkexec
+Suggested lectures: Walkthrough - Escalate Privileges by Exploiting Vulnerability in pkexec
 
 
 
@@ -197,7 +197,7 @@ Question-10.  Find a file entry point. File is given
 
 Tips:-   Use DIE(detect it easy) or exeinfo PE tools.
 
->>>>>>Suggested lectures: Analyze ELF Executable File using Detect It Easy (DIE), Find the Portable Executable (PE) Information of a Malware Executable File
+Suggested lectures: Analyze ELF Executable File using Detect It Easy (DIE), Find the Portable Executable (PE) Information of a Malware Executable File
 
 
 
@@ -205,7 +205,7 @@ Question-11.  From a pcap file, analyze a DDOS attack and provide the IP address
 
 Tips:-   Use Wireshark and statistics tab
 
->>>>>>Suggested lectures: Detect DDOS attack with Wireshark
+Suggested lectures: Detect DDOS attack with Wireshark
 
 
 
@@ -221,7 +221,7 @@ $ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME
 
 $ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* -T *TABLE NAME* --dump #dump t
 
->>>>>>Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
+Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
 
 
 
@@ -237,7 +237,7 @@ sqlmap -r <txt file from burpsuite> -D <database name> --dump
 
 sqlmap -r <txt file from burpsuite> -D <database name> --tables -T users
 
->>>>>>Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
+Suggested lectures: SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
 
 
 
@@ -245,7 +245,7 @@ Question-14.  Perform vulnerability research and exploit the target at given sit
 
 Tips:-   Scan the target with Zapp to find the vulnerability. Then exploit it. It can be file upload/ File inclusion vulnerability on DVWA.
 
->>>>>>Suggested lectures: - DVWA file upload, File Inclusion
+Suggested lectures: - DVWA file upload, File Inclusion
 
 
 
@@ -253,7 +253,7 @@ Question-15.  Perform SQL injection on a website and extract flag value.
 
 Tips:-   Use sqlmap
 
->>>>>>Suggested lectures: - SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
+Suggested lectures: - SQL Injection Vulnerabilities, SQL Injection Challenge (SQLMAP THM Free Room)
 
 
 
@@ -261,7 +261,7 @@ Question-16.  A file is available in a directory with DVWA. Access the file and 
 
 Tips:-   Use the file inclusion mechanism to access the file
 
->>>>>>Suggested lectures: - DVWA  File Inclusion
+Suggested lectures: - DVWA  File Inclusion
 
 
 
@@ -269,7 +269,7 @@ Question-17.  Analyze IoT traffic from a pcap file. Identify the packet with the
 
 Tips:- Open IOT capture file in wireshark. Filter; MQTT and find length of the packet in the lower pane
 
->>>>>>Suggested lectures: - Detect IoT traffic
+Suggested lectures: - Detect IoT traffic
 
 
 
@@ -279,7 +279,7 @@ Tips:- Use aircrack-ng to crack the password.
 
 $ aircrack-ng '*/target file.cap*' -w */wordlist*
 
->>>>>>Suggested lectures: - Walkthrough - Perform Wireless Attacks, Crack Wifi with Aircrack
+Suggested lectures: - Walkthrough - Perform Wireless Attacks, Crack Wifi with Aircrack
 
 
 
@@ -287,7 +287,7 @@ Question-19.  A RAT server is installed on a server. Connect with it and access 
 
 Tips:- Scan all ports with nmap (-p-). Look for the unknown ports. Use theef RAT to connect to it.
 
->>>>>>Suggested lectures: - Create a Trojan Server using Theef RAT Trojan
+Suggested lectures: - Create a Trojan Server using Theef RAT Trojan
 
 
 
@@ -303,4 +303,4 @@ open file
 
 decrypt the hash and enter the contents
 
->>>>>>Suggested lectures: - Disk Encryption Using Veracrypt, Calculating Hashes on Windows with different tools
+Suggested lectures: - Disk Encryption Using Veracrypt, Calculating Hashes on Windows with different tools
